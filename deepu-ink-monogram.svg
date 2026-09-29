@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92 64" role="img" aria-label="Deepu Singh ink monogram">
+  <style>
+    @keyframes ink-breathe {
+      0%, 100% { opacity: .38; transform: translateX(-1.5px); }
+      50% { opacity: .95; transform: translateX(1.5px); }
+    }
+    @keyframes spark-flicker {
+      0%, 72%, 100% { opacity: .3; transform: scale(.72) rotate(0deg); }
+      84% { opacity: 1; transform: scale(1.15) rotate(18deg); }
+    }
+    .ink-line {
+      animation: ink-breathe 2.6s ease-in-out infinite;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+    .spark {
+      animation: spark-flicker 3s ease-in-out infinite;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .ink-line, .spark { animation: none; }
+    }
+  </style>
+
+  <path class="ink-line" d="M1 19h10M0 27h8M3 47h9" fill="none" stroke="#fffdf7" stroke-width="2.2" stroke-linecap="square"/>
+
+  <path d="M11 9.5h18c14.5 0 22.5 8.3 22.5 22.5S43.2 55 28.5 55H11Zm12 11.5v22.5h5.5c7.2 0 11.2-4.1 11.2-11.4 0-7.1-4-11.1-11.2-11.1Z" fill="#10141c" fill-rule="evenodd" transform="translate(2.5 2.5)"/>
+  <path d="M8.5 7h18C41 7 49 15.3 49 29.5S40.7 52.5 26 52.5H8.5Zm12 11.5V41H26c7.2 0 11.2-4.1 11.2-11.4 0-7.1-4-11.1-11.2-11.1Z" fill="#fffdf7" fill-rule="evenodd" stroke="#10141c" stroke-width="3" stroke-linejoin="bevel"/>
+  <path d="M14.5 12.5v34M22.5 13h6.5" fill="none" stroke="#10141c" stroke-width="1.7" stroke-linecap="square" opacity=".75"/>
+
+  <path d="M54 9.5h35l-4.1 11.2H63.1l-1.8 5h15.9c7.4 0 10.4 5.1 8 11.8l-2.1 5.9C80.6 50.3 75.6 55 66.6 55H43.5l4.2-11.5h20.4c2.4 0 3.5-1.1 4.2-3l.9-2.6H57.7c-7.2 0-10.4-5.2-8-11.8l2.1-5.7c1.8-5.1 2.8-7.9 2.2-10.9Z" fill="#10141c" transform="translate(2.5 2.5)"/>
+  <path d="M51.5 7h35l-4.1 11.2H60.6l-1.8 5h15.9c7.4 0 10.4 5.1 8 11.8l-2.1 5.9c-2.5 6.9-7.5 11.6-16.5 11.6H41l4.2-11.5h20.4c2.4 0 3.5-1.1 4.2-3l.9-2.6H55.2c-7.2 0-10.4-5.2-8-11.8l2.1-5.7C51.1 12.8 52.1 10 51.5 7Z" fill="#fffdf7" stroke="#10141c" stroke-width="3" stroke-linejoin="bevel"/>
+  <path d="M58 13h19M51 46h16M52.5 30.5l24-6.5" fill="none" stroke="#10141c" stroke-width="1.7" stroke-linecap="square" opacity=".75"/>
+
+  <path class="spark" d="m86 1 1.5 3.8 4 1.6-4 1.6-1.5 4-1.5-4-4-1.6 4-1.6Z" fill="#fffdf7" stroke="#10141c" stroke-width=".9"/>
+</svg>
