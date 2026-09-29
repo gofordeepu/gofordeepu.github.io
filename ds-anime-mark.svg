@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="DS">
-  <path fill="#10141c" d="M7 2h42l13 13v42l-5 5H15L2 49V7z"/>
-  <path fill="#19c7d8" d="M7 7h39v7H14v36h36V24h7v32l-3 3H18L7 47z"/>
-  <path fill="#ff4f64" d="M49 2h13v13z"/>
-  <text x="17" y="43" fill="#fffdf7" font-family="Arial Black,Arial,sans-serif" font-size="27" font-weight="900">DS</text>
-</svg>
