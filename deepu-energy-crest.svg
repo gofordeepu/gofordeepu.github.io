@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Deepu Singh energy crest">
+  <style>
+    @keyframes crest-breathe {
+      0%, 100% { opacity: .72; }
+      50% { opacity: 1; }
+    }
+    @keyframes shard-left {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(-2px, 2px); }
+    }
+    @keyframes shard-right {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(2px, -2px); }
+    }
+    @keyframes scan-line {
+      0% { transform: translateY(-24px); opacity: 0; }
+      18% { opacity: .9; }
+      62% { opacity: .9; }
+      78%, 100% { transform: translateY(28px); opacity: 0; }
+    }
+    .crest-edge { animation: crest-breathe 2.8s ease-in-out infinite; }
+    .shard-left {
+      animation: shard-left 2.6s ease-in-out infinite;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+    .shard-right {
+      animation: shard-right 2.2s ease-in-out infinite;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+    .scan { animation: scan-line 3.2s ease-in-out infinite; }
+    @media (prefers-reduced-motion: reduce) {
+      .crest-edge, .shard-left, .shard-right, .scan { animation: none; }
+    }
+  </style>
+  <defs>
+    <clipPath id="crest-clip">
+      <path d="M13 7h34l11 13-6 31-20 10-21-10-5-31z"/>
+    </clipPath>
+    <filter id="crest-glow" x="-45%" y="-45%" width="190%" height="190%">
+      <feGaussianBlur stdDeviation="1.25" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <path class="shard-left" d="M2 18 15 10 10 27Z" fill="#19c7d8" filter="url(#crest-glow)"/>
+  <path class="shard-left" d="m7 47 13 10-3-15Z" fill="#ffd447" filter="url(#crest-glow)"/>
+  <path class="shard-right" d="m47 4 14 7-11 8Z" fill="#ff4f64" filter="url(#crest-glow)"/>
+  <path class="shard-right" d="m53 42 9 8-13 5Z" fill="#7667f2" filter="url(#crest-glow)"/>
+
+  <path d="M13 7h34l11 13-6 31-20 10-21-10-5-31z" fill="#10141c" stroke="#fffdf7" stroke-width="1.4"/>
+  <path class="crest-edge" d="M15 11h29l9 11-5 26-16 8-17-8-4-26z" fill="none" stroke="#19c7d8" stroke-width="2.2" filter="url(#crest-glow)"/>
+  <path d="m44 11 9 11-2 10" fill="none" stroke="#ff4f64" stroke-width="3" stroke-linecap="round"/>
+  <path d="m15 48-4-26 5-6" fill="none" stroke="#ffd447" stroke-width="2.4" stroke-linecap="round"/>
+
+  <g clip-path="url(#crest-clip)">
+    <rect class="scan" x="9" y="28" width="47" height="3" fill="#ffd447" opacity=".9"/>
+  </g>
+
+  <text x="32" y="40.5" fill="#ff4f64" opacity=".68" font-family="Arial Black,Arial,sans-serif" font-size="23" font-weight="900" text-anchor="middle" transform="translate(1.4 1.1)">DS</text>
+  <text x="32" y="40.5" fill="#fffdf7" font-family="Arial Black,Arial,sans-serif" font-size="23" font-weight="900" text-anchor="middle">DS</text>
+  <path d="M20 45h24" stroke="#19c7d8" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
